@@ -16,5 +16,8 @@ namespace assetManagement.Models
         public string Description { get; set; }
         public int Stock { get; set; }
         public string Price { get; set; }
+        public Category Category { get; set; }
+        public ICollection<ConditionItem> ConditionItems { get; set; }
+        public ICollection<TransactionItem> TransactionItems { get; set; }
     }
 }

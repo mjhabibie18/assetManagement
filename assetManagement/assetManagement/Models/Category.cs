@@ -13,5 +13,6 @@ namespace assetManagement.Models
         [Key]
         public int Id { get; set; }
         public string CategoryName { get; set; }
+        public ICollection<Item> Items { get; set; }
     }
 }

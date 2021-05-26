@@ -10,6 +10,8 @@ namespace assetManagement.Models
     {
         [Key]
         public int Id { get; set; }
+        public Item Item { get; set; }
+        public Condition Condition { get; set; }
 
     }
 }

@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 
 namespace assetManagement.Models
 {
-    [Table("TB_M_Condition")]
+    [Table("TB_T_Condition")]
     public class Condition
     {
         [Key]
         public int Id { get; set; }
         public string ConditionName { get; set; }
+        public ICollection<ConditionItem> ConditionItems { get; set; }
     }
 }

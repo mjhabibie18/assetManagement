@@ -15,6 +15,9 @@ namespace assetManagement.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public string Contact { get; set; }
-        
+        public Account Account { get; set; }
+        public Role Role { get; set; }
+        public Department Department { get; set; }
+        public ICollection<Transaction> Transactions { get; set; }
     }
 }
