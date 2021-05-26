@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj": {}
+    "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj": {}
   },
   "projects": {
-    "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj": {
+    "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj",
         "projectName": "assetManagement",
-        "projectPath": "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj",
-        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\obj\\",
+        "projectPath": "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

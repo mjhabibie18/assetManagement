@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace assetManagement.Models
 {
-    [Table("TB_T_Transaction")]
+    [Table("TB_T_TransactionItem")]
     public class TransactionItem
     {
         [Key]
