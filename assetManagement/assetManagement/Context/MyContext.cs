@@ -29,16 +29,59 @@ namespace assetManagement.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Account-Employee
+            //One to One
             modelBuilder.Entity<Account>()
                 .HasOne(Account => Account.Employee)
                 .WithOne(Employee => Employee.Account)
                 .HasForeignKey<Account>(Account => Account.Id);
 
             //Employee-Role
+            //One to Many
             modelBuilder.Entity<Employee>()
                 .HasOne(Employee => Employee.Role)
-                .WithMany(Role=> Role.Employees)
+                .WithMany(Role => Role.Employees);
 
+            //Department -Employee
+            //One to Many
+            modelBuilder.Entity<Employee>()
+                .HasOne(Employee => Employee.Department)
+                .WithMany(Department => Department.Employees);
+
+            //Empolyee-Transaction
+            //one to Many
+            modelBuilder.Entity<Transaction>()
+                .HasOne(Transaction => Transaction.Employee)
+                .WithMany(Employee => Employee.Transactions);
+
+            //Transaction -TransactionItem
+            //one to Many
+            modelBuilder.Entity<TransactionItem>()
+                .HasOne(TransactionItem => TransactionItem.Transaction)
+                .WithMany(Transaction => Transaction.TransactionItems);
+
+            //transactionItem-item
+            //one to many
+            modelBuilder.Entity<TransactionItem>()
+                .HasOne(TransactionItem => TransactionItem.Item)
+                .WithMany(Item => Item.TransactionItems);
+
+            //category-item
+            //one to many
+            modelBuilder.Entity<Item>()
+                .HasOne(Item => Item.Category)
+                .WithMany(Category => Category.Items);
+
+            //Item-ConditionItem
+            //one to many
+            modelBuilder.Entity<ConditionItem>()
+                .HasOne(ConditionItem => ConditionItem.Item)
+                .WithMany(Item => Item.ConditionItems);
+
+            //condition-conditionitem
+            //one to many
+            modelBuilder.Entity<ConditionItem>()
+                .HasOne(ConditionItem => ConditionItem.Condition)
+                .WithMany(Condition => Condition.ConditionItems);
         }
     }
 }
