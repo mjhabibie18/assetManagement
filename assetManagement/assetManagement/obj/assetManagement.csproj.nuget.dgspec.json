@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj": {}
+    "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj": {
+    "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj",
+        "projectUniqueName": "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj",
         "projectName": "assetManagement",
-        "projectPath": "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\source\\repos\\New folder\\assetManagement\\assetManagement\\assetManagement\\obj\\",
+        "projectPath": "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\assetManagement.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\assetManagement\\assetManagement\\assetManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,19 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[3.1.0, )"
             },
