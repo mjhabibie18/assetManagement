@@ -26,6 +26,7 @@ namespace assetManagement.Context
         public DbSet<Role> Roles { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<TransactionItem> TransactionItems { get; set; }
+        public DbSet<Parameter> Parameters { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Account-Employee
