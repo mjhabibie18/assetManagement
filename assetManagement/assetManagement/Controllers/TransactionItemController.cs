@@ -14,10 +14,10 @@ namespace assetManagement.Controllers
     [ApiController]
     public class TransactionItemController : BaseController<TransactionItem, TransactionItemRepository, int>
     {
-        private TransactionItemRepository transactionItemRepository;
-        public TransactionItemController(TransactionItemRepository transactionItemRepository) : base(transactionItemRepository)
+        private TransactionItemRepository transactionitemRepository;
+        public TransactionItemController(TransactionItemRepository transactionitemRepository) : base(transactionitemRepository)
         {
-            this.transactionItemRepository = transactionItemRepository;
+            this.transactionitemRepository = transactionitemRepository;
         }
     }
 }

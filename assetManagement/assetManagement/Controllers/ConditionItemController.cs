@@ -14,10 +14,10 @@ namespace assetManagement.Controllers
     [ApiController]
     public class ConditionItemController : BaseController<ConditionItem, ConditionItemRepository, int>
     {
-        private ConditionItemRepository conditionItemRepository;
-        public ConditionItemController(ConditionItemRepository conditionItemRepository) : base(conditionItemRepository)
+        private ConditionItemRepository conditionitemRepository;
+        public ConditionItemController(ConditionItemRepository conditionitemRepository) : base(conditionitemRepository)
         {
-            this.conditionItemRepository = conditionItemRepository;
+            this.conditionitemRepository = conditionitemRepository;
         }
     }
 }
