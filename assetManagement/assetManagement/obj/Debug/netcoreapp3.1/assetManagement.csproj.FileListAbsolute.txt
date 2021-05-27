@@ -49,3 +49,11 @@ C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManag
 C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
 C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\obj\Debug\netcoreapp3.1\assetManagement.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\BCrypt.Net-Next.dll
+C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Acer\source\repos\New folder\assetManagement\assetManagement\assetManagement\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

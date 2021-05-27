@@ -82,6 +82,10 @@ namespace assetManagement.Context
             modelBuilder.Entity<ConditionItem>()
                 .HasOne(ConditionItem => ConditionItem.Condition)
                 .WithMany(Condition => Condition.ConditionItems);
+
+            modelBuilder.Entity<Employee>()
+                .HasIndex(Employee => Employee.Email)
+                .IsUnique();
         }
     }
 }
