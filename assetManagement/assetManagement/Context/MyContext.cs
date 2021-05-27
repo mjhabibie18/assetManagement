@@ -82,6 +82,11 @@ namespace assetManagement.Context
             modelBuilder.Entity<ConditionItem>()
                 .HasOne(ConditionItem => ConditionItem.Condition)
                 .WithMany(Condition => Condition.ConditionItems);
+
+            //email - agar yang terdaftar 1 email
+            modelBuilder.Entity<Employee>()
+                .HasIndex(Employee => Employee.Email)
+                .IsUnique();
         }
     }
 }
