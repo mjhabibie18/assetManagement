@@ -65,7 +65,9 @@ namespace assetManagement
                     Scheme = "Bearer"
                 });
             });
+
             services.AddScoped<IGenericDapper, GeneralDapper>();
+
             services.AddScoped<AccountRepository>();
             services.AddScoped<CategoryRepository>();
             services.AddScoped<ConditionRepository>();
