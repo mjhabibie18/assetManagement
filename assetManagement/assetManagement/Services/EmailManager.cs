@@ -18,9 +18,9 @@ namespace assetManagement.Services
         public EmailManager(IConfiguration config, MyContext context)
         {
             _config = config.GetSection("MailSettings");
-            //Mail = _config.GetSection("Mail").Value;
+            Mail = _config.GetSection("Mail").Value;
             //DisplayName = _config.GetSection("DisplayName").Value;
-            //Password = _config.GetSection("Password").Value;
+            Password = _config.GetSection("Password").Value;
             Host = _config.GetSection("Host").Value;
             Port = _config.GetSection("Port").Value;
 
@@ -38,7 +38,7 @@ namespace assetManagement.Services
             SmtpClient smtp = new SmtpClient();
             smtp.Host = Host;
             smtp.Port = Convert.ToInt32(Port);
-            smtp.Credentials = new NetworkCredential(parameter.Name, parameter.Value);
+            smtp.Credentials = new NetworkCredential(Mail, Password);
             smtp.EnableSsl = true;
             smtp.Send(mail);
         }

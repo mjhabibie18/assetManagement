@@ -109,7 +109,7 @@ namespace assetManagement.Controllers
             dbparams.Add("Name", register.Name, DbType.String);
             dbparams.Add("Email", register.Email, DbType.String);
             dbparams.Add("Password", hashPassword, DbType.String);
-            dbparams.Add("Contact", register.Contact, DbType.DateTime);
+            dbparams.Add("Contact", register.Contact, DbType.String);
             dbparams.Add("RoleId", register.RoleId, DbType.String);
             dbparams.Add("DepartmentId", register.DepartmentId, DbType.String);
 
@@ -147,20 +147,20 @@ namespace assetManagement.Controllers
         [HttpPost("ForgetPassword")]
         [AllowAnonymous]
 
-        public ActionResult ForgetPassword([FromBody] string email)
+        public ActionResult ForgetPassword(ForgetPassword forget)
         {
-            var isValid = _context.Accounts.SingleOrDefault(l => l.Employee.Email == email);
+            var isValid = _context.Accounts.SingleOrDefault(l => l.Employee.Email == forget.Email);
             EmailManager emailManager = new EmailManager(_config, _context);
             if (isValid != null)
             {
-                var token = GenerateResetPasswordToken(email);
+                var token = GenerateResetPasswordToken(forget.Email);
 
                 //var callback = Url.Action(nameof(ResetPassword), "api/JwtAuth/", new { token }, Request.Scheme);
 
                 string subject = "Your changed password";
                 string body = token;
                 emailManager.SendEmail(_config.GetSection("MailSettings").GetSection("Mail").Value,
-                    subject, body, email);
+                    subject, body, forget.Email);
 
                 return Ok("Token has been sent to your email");
             }
